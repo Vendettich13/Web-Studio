@@ -12,178 +12,343 @@
 <body class="body">
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">Web<span>Studio</span></a>
-            <nav class="site-nav">
-                <ul class="nav">
-                    <li class="nav__item"><a href="index.html" class="nav__link link">Студия</a></li>
-                    <li class="nav__item"><a href="portfolio.html" class="nav__link link current">Портфолио</a></li>
-                    <li class="nav__item"><a href="" class="nav__link link">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="auth">
-                <li class="auth__item">
-                    <a href="mailto:info@devstudio.com" class="auth-header__link link"><svg class="auth__icon"
-                            width="16" height="12">
-                            <use href="./images/svg/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="auth__item"><a href="tel:+380961111111" class="auth-header__link link"><svg
-                            class="auth__icon" width="10" height="16">
-                            <use href="./images/svg/icons.svg#icon-smartphone"></use>
-                        </svg>+380961111111</a></li>
-            </ul>
+            <div class="logo-tab">
+                <a href="index.html" class="logo header-logo">Web<span>Studio</span></a>
+            </div>
+            <div class="header-tab">
+                <div class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="./index.html" class="nav-list__link link ">Студия</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="./portfolio.html" class="nav-list__link link current">Портфолио</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-contacts">
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <a href="mailto:info@devstudio.com" class="contacts-list__link-mail">
+                                <svg class="contacts-list__icon" width="14" height="10">
+                                    <use href="./images/svg/icons.svg#icon-mail-tab"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="tel:+380961111111" class="contacts-list__link-tel">
+                                <svg class="contacts-list__icon" width="10" height="14">
+                                    <use href="./images/svg/icons.svg#icon-tel-tab"></use>
+                                </svg>
+                                +380961111111</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="open-menu-btn">
+                <svg class="menu-icon" width="40" height="40">
+                    <use href="./images/svg/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden">
+                <button type="button" class="close-menu-btn">
+                    <svg class="menu-icon" width="40" height="40">
+                        <use href="./images/svg/icons.svg#icon-close-menu"></use>
+                    </svg>
+                </button>
+                <div class="container">
+                    <div class="mob-top">
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="./index.html" class="nav-list__link link ">Студия</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="./portfolio.html" class="nav-list__link link current">Портфолио</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="" class="nav-list__link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-bottom">
+                        <ul class="contacts-list">
+                            <li class="contacts-list__item"><a href="tel:+380961111111"
+                                    class="contacts-list__link-tel">+380961111111</a></li>
+                            <li class="contacts-list__item"><a href="mailto:info@devstudio.com"
+                                    class="contacts-list__link-mail">info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="soc-list">
+                            <li class="soc-list__item"><a href="" class="soc-list__link">Instagram</a></li>
+                            <li class="soc-list__item"><a href="" class="soc-list__link">Twitter</a></li>
+                            <li class="soc-list__item"><a href="" class="soc-list__link">Facebook</a></li>
+                            <li class="soc-list__item"><a href="" class="soc-list__link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <main>
-        <section class="main">
-            <div class="container">
-                <h1 class="element-invisible">Список Радиокнопок</h1>
-                <ul class="buttons-list">
-                    <li class="item"><button class="button radio-btn active-btn" type="button">Все</button></li>
-                    <li class="item"><button class="button radio-btn" type="button">Веб-сайты</button></li>
-                    <li class="item"><button class="button radio-btn" type="button">Приложения</button></li>
-                    <li class="item"><button class="button radio-btn" type="button">Дизайн</button></li>
-                    <li class="item"><button class="button radio-btn" type="button">Маркетинг</button></li>
-                </ul>
-                <ul class="card-list">
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-1.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Технокряк</p>
-                                <p class="post-img-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-2.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Постер New Orlean vs Golden Star</p>
-                                <p class="post-img-text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-3.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Ресторан Seafood</p>
-                                <p class="post-img-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-4.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Проект Prime</p>
-                                <p class="post-img-text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-5.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Проект Boxes</p>
-                                <p class="post-img-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-6.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Inspiration has no Borders</p>
-                                <p class="post-img-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-7.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Издание Limited Edition</p>
-                                <p class="post-img-text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-8.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Проект LAB</p>
-                                <p class="post-img-text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a class="card-item-link" href="">
-                            <div class="action-thumb">
-                                <img src="./images/portfolio/portfolio-9.jpg" alt="Технокряк" width="370" height="294">
-                                <p class="action-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это
-                                    позволит посетителю получить
-                                    исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="description-card">
-                                <p class="pre-img-text">Growing Business</p>
-                                <p class="post-img-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <main class="main">
+        <div class="container main-container">
+            <h1 class="element-invisible">Список Радиокнопок</h1>
+            <ul class="buttons-list">
+                <li class="item"><button class="button radio-btn active-btn" type="button">Все</button></li>
+                <li class="item"><button class="button radio-btn" type="button">Веб-сайты</button></li>
+                <li class="item"><button class="button radio-btn" type="button">Приложения</button></li>
+                <li class="item"><button class="button radio-btn" type="button">Дизайн</button></li>
+                <li class="item"><button class="button radio-btn" type="button">Маркетинг</button></li>
+            </ul>
+            <ul class="card-list">
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-1-1x-min.jpg 1x, ./images/portfolio/card-1-2x-min.jpg 2x, ./images/portfolio/card-1-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-1-1x-min.jpg 1x, ./images/portfolio/card-tab-1-2x-min.jpg 2x, ./images/portfolio/card-tab-1-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-1-1x-min.jpg 1x, ./images/portfolio/card-desk-1-2x-min.jpg 2x, ./images/portfolio/card-desk-1-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-1-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Технокряк</p>
+                            <p class="description-card__post-text">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-2-1x-min.jpg 1x, ./images/portfolio/card-2-2x-min.jpg 2x, ./images/portfolio/card-2-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-2-1x-min.jpg 1x, ./images/portfolio/card-tab-2-2x-min.jpg 2x, ./images/portfolio/card-tab-2-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-2-1x-min.jpg 1x, ./images/portfolio/card-desk-2-2x-min.jpg 2x, ./images/portfolio/card-desk-2-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-2-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Постер New Orlean vs Golden Star</p>
+                            <p class="description-card__post-text">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-3-1x-min.jpg 1x, ./images/portfolio/card-3-2x-min.jpg 2x, ./images/portfolio/card-3-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-3-1x-min.jpg 1x, ./images/portfolio/card-tab-3-2x-min.jpg 2x, ./images/portfolio/card-tab-3-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-3-1x-min.jpg 1x, ./images/portfolio/card-desk-3-2x-min.jpg 2x, ./images/portfolio/card-desk-3-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-3-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Ресторан Seafood</p>
+                            <p class="description-card__post-text">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-4-1x-min.jpg 1x, ./images/portfolio/card-4-2x-min.jpg 2x, ./images/portfolio/card-4-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-4-1x-min.jpg 1x, ./images/portfolio/card-tab-4-2x-min.jpg 2x, ./images/portfolio/card-tab-4-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-4-1x-min.jpg 1x, ./images/portfolio/card-desk-4-2x-min.jpg 2x, ./images/portfolio/card-desk-4-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-4-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Проект Prime</p>
+                            <p class="description-card__post-text">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-5-1x-min.jpg 1x, ./images/portfolio/card-5-2x-min.jpg 2x, ./images/portfolio/card-5-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-5-1x-min.jpg 1x, ./images/portfolio/card-tab-5-2x-min.jpg 2x, ./images/portfolio/card-tab-5-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-5-1x-min.jpg 1x, ./images/portfolio/card-desk-5-2x-min.jpg 2x, ./images/portfolio/card-desk-5-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-5-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Проект Boxes</p>
+                            <p class="description-card__post-text">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-6-1x-min.jpg 1x, ./images/portfolio/card-6-2x-min.jpg 2x, ./images/portfolio/card-6-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-6-1x-min.jpg 1x, ./images/portfolio/card-tab-6-2x-min.jpg 2x, ./images/portfolio/card-tab-6-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-6-1x-min.jpg 1x, ./images/portfolio/card-desk-6-2x-min.jpg 2x, ./images/portfolio/card-desk-6-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-6-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Inspiration has no Borders</p>
+                            <p class="description-card__post-text">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-7-1x-min.jpg 1x, ./images/portfolio/card-7-2x-min.jpg 2x, ./images/portfolio/card-7-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-7-1x-min.jpg 1x, ./images/portfolio/card-tab-7-2x-min.jpg 2x, ./images/portfolio/card-tab-7-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-7-1x-min.jpg 1x, ./images/portfolio/card-desk-7-2x-min.jpg 2x, ./images/portfolio/card-desk-7-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-7-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Издание Limited Edition</p>
+                            <p class="description-card__post-text">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-8-1x-min.jpg 1x, ./images/portfolio/card-8-2x-min.jpg 2x, ./images/portfolio/card-8-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-8-1x-min.jpg 1x, ./images/portfolio/card-tab-8-2x-min.jpg 2x, ./images/portfolio/card-tab-8-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-8-1x-min.jpg 1x, ./images/portfolio/card-desk-8-2x-min.jpg 2x, ./images/portfolio/card-desk-8-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-8-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Проект LAB</p>
+                            <p class="description-card__post-text">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-list__item">
+                    <a class="card-list__link" href="">
+                        <div class="action-thumb">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/card-9-1x-min.jpg 1x, ./images/portfolio/card-9-2x-min.jpg 2x, ./images/portfolio/card-9-3x-min.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/card-tab-9-1x-min.jpg 1x, ./images/portfolio/card-tab-9-2x-min.jpg 2x, ./images/portfolio/card-tab-9-3x-min.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/card-desk-9-1x-min.jpg 1x, ./images/portfolio/card-desk-9-2x-min.jpg 2x, ./images/portfolio/card-desk-9-3x-min.jpg 3x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/portfolio/card-9-1x-min.jpg" alt="Технокряк" width="450"
+                                    height="294" />
+                            </picture>
+                            <p class="action-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="description-card">
+                            <p class="description-card__pre-text">Growing Business</p>
+                            <p class="description-card__post-text">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
     <footer class="footer">
         <div class="container footer-cont">
@@ -231,6 +396,8 @@
             </form>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

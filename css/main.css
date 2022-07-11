@@ -233,15 +233,14 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
-  transition: transform 1000ms, cubic-bezier(0.4, 0, 0.2, 1) visibility 1s 0s;
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
   transform: rotate(360deg) scale(0.1) translate(150px);
-  transition: 1000ms, visibility 0s 1s;
 }
 
 .modal {
@@ -579,6 +578,11 @@ span {
   overflow: auto;
   transition: transform 500ms, cubic-bezier(0.4, 0, 0.2, 1) 1000ms, visibility 1s 0s;
 }
+@media screen and (min-width: 480px) {
+  .mob-menu {
+    display: none;
+  }
+}
 .mob-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -873,6 +877,12 @@ span {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 258dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-desk3x-min.jpg);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
@@ -1220,7 +1230,6 @@ span {
 }
 
 .clients-list__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 30px) / 2);
 }
@@ -1552,6 +1561,9 @@ span {
     gap: 30px;
   }
 }
+.card-list__link:hover, .card-list__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 @media screen and (min-width: 768px) {
   .card-list__item {
     width: calc((100% - 30px) / 2);
@@ -1561,9 +1573,6 @@ span {
   .card-list__item {
     width: calc((100% - 60px) / 3);
   }
-}
-.card-list__item:hover, .card-list__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 @media screen and (max-width: 767px) {
   .card-list__item:not(:last-child) {
@@ -1579,11 +1588,9 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
   width: 100%;
   height: 100%;
   opacity: 0;
-  font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -1591,7 +1598,31 @@ span {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
 }
-.card-list__item:hover .action-thumb__text {
+@media screen and (max-width: 479px) {
+  .action-thumb__text {
+    font-size: 14px;
+    padding: 24px 15px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .action-thumb__text {
+    font-size: 18px;
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .action-thumb__text {
+    font-size: 18px;
+    padding: 49px 24px 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .action-thumb__text {
+    font-size: 18px;
+    padding: 63px 24px;
+  }
+}
+.card-list__link:hover .action-thumb__text, .card-list__link:focus .action-thumb__text {
   transform: translateY(0);
   opacity: 1;
 }

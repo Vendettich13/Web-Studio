@@ -408,14 +408,19 @@ img {
   justify-content: center;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   background-color: #ffffff;
 }
+@media screen and (max-width: 1199px) {
+  .privacy-text {
+    width: max-content;
+  }
+}
 @media screen and (min-width: 1200px) {
   .privacy-text {
-    font-style: 14px;
+    font-size: 14px;
     line-height: 1.7142857143;
   }
 }

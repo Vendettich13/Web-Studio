@@ -1266,11 +1266,6 @@ span {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-nav {
-    width: 50%;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-nav {
     margin-right: 70px;
@@ -1353,11 +1348,6 @@ span {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-links {
-    width: 50%;
-  }
-}
 
 .footer-list__icon {
   fill: #ffffff;
@@ -1404,7 +1394,7 @@ span {
   .footer-cont {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
